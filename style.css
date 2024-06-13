@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: whitesmoke;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+
+    font-size: 30px;
+    border-style: none;
+    background-color: rgb(97, 97, 97);
+    color:snow;
+}
+
+#zero-btn {
+    width: 150px
+}
+
+#clear-btn {
+    background-color: rgb(185, 185, 185);
+    color: black;
+}
+
+#calc-container {
+    display: flex;
+    flex-direction: column;
+
+    width:min-content;
+    padding: 10px;
+
+    background-color: black;
+    border-radius: 20px;
+}
+
+#display-area {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100px;
+    margin: 5px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 5px;
+}
+
+#left-side-input-container {
+    min-width: auto;
+}
+
+#nums-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#nums-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#zero-decimal-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#operands-container button {
+    background-color: orange;
+}
+
+#operands-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: auto;
+}
+
