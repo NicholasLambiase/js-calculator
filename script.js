@@ -24,7 +24,6 @@ function operate(firstOperand, operator, secondOperand) {
 }
 
 
-
 function add(a, b) {
     return a + b;
 }
@@ -41,3 +40,11 @@ function multiply(a, b) {
     return a * b;
 }
 
+// Switch Easter Egg Functionality
+const switchToggle = document.getElementById('switch-toggle');
+
+switchToggle.addEventListener('change', function() {
+  const isChecked = this.checked;
+  // Perform any desired actions based on the switch state
+  console.log(`Switch is ${isChecked ? 'on' : 'off'}`);
+});
