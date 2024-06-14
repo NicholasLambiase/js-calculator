@@ -1,67 +1,141 @@
+@font-face {
+    font-family: SevenSeg;
+    src: url(./fonts/fs-sevegment.ttf);
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 98vh;
+    width: 98vw;
 
-    background-color: whitesmoke;
+    background-color: #475357;
+    /* background-color:rgb(158, 165, 144); */
 }
 
 button {
     width: 70px;
     height: 70px;
-    border-radius: 35px;
+    border-radius: 2px;
 
+    font-family: "Varela Round", sans-serif;
     font-size: 30px;
     border-style: none;
-    background-color: rgb(97, 97, 97);
-    color:snow;
+    background-color: white;
+    color: rgb(48, 48, 48);
+}
+
+#TI-logo {
+    height: 60px;
+    margin: 0px 5px;
+}
+
+#logo-txt {
+    height: 40px;
+    margin: 0px;
+    margin-top: 12px;
+
+    font-family: "Varela Round", sans-serif;
+    font-size: 35px;
+
+    color: #D5D5B5;
+    text-shadow: 5px 5px rgba(43, 43, 43, 0.2);;
 }
 
 #zero-btn {
-    width: 150px
+    width: 111px
 }
 
-#clear-btn {
-    background-color: rgb(185, 185, 185);
-    color: black;
+#equals-btn {
+    width: 111px;
+    background-color: orange;
+}
+
+#filler-div {
+    width: 72px;
+}
+
+.operand-btn {
+    background-color: #D5D5B5;
+}
+
+#calc-border {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #D5D5B5;
+    box-shadow: 5px 5px 8px 1px rgba(0,0,0,.6);
 }
 
 #calc-container {
     display: flex;
     flex-direction: column;
 
-    width:min-content;
-    padding: 10px;
+    width: min-content;
+    padding: 5px;
 
-    background-color: black;
-    border-radius: 20px;
+    background-color: #3C444A;
+    border-radius: 3px;
 }
 
 #display-area {
     display: flex;
     flex-direction: row-reverse;
-    height: 100px;
+    align-items: center;
+    align-content: space-between;
+    height: 72.5px;
+    border-radius: 2px 2px 2px 2px;
     margin: 5px;
-    border-radius: 20px 20px 0px 0px;
+
+    background-color: rgb(97, 21, 21, 50%);
+    box-shadow: 5px 5px 5px 1px rgba(43, 43, 43, 0.2);
+}
+
+.result-txt {
+    width: 29px;
+    height: 70px;
+    margin: 0px 5px;
+
+    align-content: center;
+    text-align: center;
+    font-family: "SevenSeg", sans-serif;
+    font-size: 40px;
+    
+    color: rgb(192, 54, 54);
+}
+
+#logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 5px;
+    margin-bottom: 10px;
+    
+    border-bottom: 2px solid #30363b;
+    box-shadow: 0px 3px 0px 0px rgba(43, 43, 43, 0.075);
+    
+    height: 60px;
 }
 
 #input-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
     margin: 5px;
 }
 
-#left-side-input-container {
-    min-width: auto;
+#top-clear-operands {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    gap: 10px;
 }
 
-#nums-input-container{
+#nums-operands-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
 }
 
@@ -72,21 +146,17 @@ button {
     gap: 10px;
 }
 
-#zero-decimal-container {
+#side-clear-operands {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     gap: 10px;
 }
 
-#operands-container button {
-    background-color: orange;
-}
-
-#operands-container {
+#zero-decimal-equal-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-width: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
 
