@@ -52,8 +52,6 @@ function operate(firstOperand, operator, secondOperand) {
 
 // Given an input of a single character this will create and add it to the display
 function displayMsg(msg) {
-    // console.log(msg);
-    
     let length;
     msg.length < 8 ? length = msg.length : length = 8;
     
@@ -117,7 +115,6 @@ num_btns.forEach(num => {
     });
 });
 
-
 // Operator btns
 // When clicked need to clear the screen, set the operator, switch operand
 const operator_btns = document.querySelectorAll(".operator-btn");
@@ -156,6 +153,7 @@ equals_btn.addEventListener("click", () => {
     } else
         displayError();
 });
+
 
 // Clear Entry Button
 // If the operator boolean is false clear the first operand
